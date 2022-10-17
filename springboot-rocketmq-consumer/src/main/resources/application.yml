@@ -1,0 +1,14 @@
+server:
+  port: 18080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+
+#消费者nameserver 和 组名
+rocketmq:
+  name-server: 192.168.0.125:9876;192.168.0.126:9876;192.168.0.127:9876;192.168.0.128:9876
+  consumer:
+    group: my-group

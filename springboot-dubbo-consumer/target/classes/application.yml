@@ -1,0 +1,16 @@
+server:
+  port: 18090
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+spring:
+  application:
+    name: dubbo-consumer
+  dubbo:
+    application:
+      id: dubbo-consumer
+      name: dubbo-consumer
+    registry:
+      address: zookeeper://192.168.0.125:2181;zookeeper://192.168.0.126:2181;zookeeper://192.168.0.127:2181

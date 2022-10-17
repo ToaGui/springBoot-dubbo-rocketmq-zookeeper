@@ -1,0 +1,21 @@
+server:
+  port: 18070
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: dubbo-provider
+  dubbo:
+    application:
+      id: dubbo-provider
+      name: dubbo-provider
+    registry:
+      address: zookeeper://192.168.0.125:2181;zookeeper://192.168.0.126:2181;zookeeper://192.168.0.127:2181
+      server: true
+    protocol:
+      name: dubbo
+      port: 20882
